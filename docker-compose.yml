@@ -1,0 +1,9 @@
+version: "2.18.1"
+services:
+  app:
+    build: .
+    command: python3 server.py
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/hello-world
